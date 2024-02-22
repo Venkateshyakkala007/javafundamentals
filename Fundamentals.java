@@ -114,23 +114,99 @@ class Fundamentals{
         // prime number ->(1,N) factors = 2
 
         // 17 
-        int count = 0;
-        for(int i=1; i<=n; i++)
-        {
-            if(n % i == 0){
-                count++;
-            }
-        }
+        // int count = 0;
+        // for(int i=1; i<=n; i++)
+        // {
+        //     if(n % i == 0){
+        //         count++;
+        //     }
+        // }
 
-        if(count == 2){
-            System.out.println("It is a prime ");
-        }
-        else {
-            System.out.println("It is a not a prime number");
-        }
+        // if(count == 2){
+        //     System.out.println("It is a prime ");
+        // }
+        // else {
+        //     System.out.println("It is a not a prime number");
+        // }
         // 3. N= 30 2,3,5,7,11,13,17,19,23,29
         
 
+
+        // 1. Home work question n = 100 even ,odd numbers
+
+        // for(int i=0; i<=n; i++)
+        // {
+        //     // checking whether even 
+        //     if(i % 2 == 0){
+        //         System.out.print(i+" ");
+        //     }
+        // }
+
+        
+        //2. Home work --> take a number print the factors of number
+
+        // n = 10 , 2
+
+        // for(int i = 1; i <= n; i++){
+        //     // check whether a number is factor or not
+        //     // when any number is divisible means it remainder == 0
+        //     if(n % i == 0){
+        //         System.out.print(i+" ");
+        //     }
+        // }
+
+        // 3. N= 30 find the primes upto N=30
+
+        
+
+        // for(int i = 1; i <= n; i++)
+        // {
+        //     if(n %i == 0){
+        //         count++;
+        //     }
+        // }
+
+        // if(count == 2){
+        //     System.out.print("it is prime");
+        // }
+
+
+        // for(int i = 2; i<=n ;i++)
+        // {
+        //     int count = 0;
+        //     for(int j = 1; j <= i; j++)
+        //     {
+        //             if(i %j == 0){
+        //                 count++;
+        //             }
+        //     }
+
+        //     if(count == 2){
+        //         System.out.print(i+" ");
+        //     }
+        // }
+
+
+        // 4. perfect number :  a perfect number is a positive integer that is equal 
+        //to the sum of its positive divisors, excluding the number itself
+
+        //6 : 1, 2, 3   = 6 
+        // 10 : 1,2,5  , 10 is not a perfect number
+        
+        int sum = 0;
+        for(int i = 1; i<n; i++){
+            if(n % i == 0){
+                sum += i;
+            }
+        }
+        if(sum == n){
+            System.out.println("Perfect number");  
+        } else {
+            System.out.println("It is not a perfect number");
+        }
+
+
+        // Home work : N =100  print all perfect numbers
        
 
     }
